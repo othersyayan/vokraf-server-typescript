@@ -4,6 +4,7 @@ import Role from './role'
 import Session from './session'
 import Upload from './upload'
 import User from './user'
+import CareerTrack from './careerTrack'
 
 const models = {
   Role,
@@ -12,6 +13,7 @@ const models = {
   Upload,
   Notification,
   FCMToken,
+  CareerTrack,
 }
 
 // relation
