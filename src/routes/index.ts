@@ -2,6 +2,7 @@ import express from 'express'
 
 import authRoute from './auth.route'
 import baseRoute from './base.route'
+import ctRoute from './careerTrack.route'
 import userRoute from './user.route'
 
 const router = express.Router()
@@ -18,6 +19,10 @@ const defaultRoutes = [
   {
     path: '/users',
     route: userRoute,
+  },
+  {
+    path: '/careerTrack',
+    route: ctRoute,
   },
 ]
 

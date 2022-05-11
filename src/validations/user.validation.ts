@@ -1,4 +1,4 @@
-import Joi from 'joi';
+import Joi from 'joi'
 
 const getUsers = {
   query: Joi.object().keys({
@@ -6,13 +6,13 @@ const getUsers = {
     email: Joi.string(),
     password: Joi.string(),
   }),
-};
+}
 
 const getUser = {
   params: Joi.object().keys({
     id: Joi.string(),
   }),
-};
+}
 
 const createUser = {
   body: Joi.object().keys({
@@ -20,7 +20,7 @@ const createUser = {
     email: Joi.string().required().email(),
     password: Joi.string().required(),
   }),
-};
+}
 
 const updateUser = {
   params: Joi.object().keys({
@@ -31,13 +31,13 @@ const updateUser = {
     email: Joi.string().required().email(),
     password: Joi.string().required(),
   }),
-};
+}
 
 const userValidation = {
   getUsers,
   getUser,
   createUser,
   updateUser,
-};
+}
 
-export default userValidation;
+export default userValidation
